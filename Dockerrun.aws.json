@@ -1,12 +1,12 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "node:18-alpine",
+    "Name": "898423169240.dkr.ecr.us-east-2.amazonaws.com/devopsaplicacion-back:latest",
     "Update": "true"
   },
   "Ports": [
     {
-      "ContainerPort": "3000"
+      "ContainerPort": 3000
     }
   ]
 }
