@@ -1,12 +1,12 @@
 FROM node:18-alpine
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm install --production 
 COPY . .
 ENV PORT=3000
+ENV NODE_TLS_REJECT_UNAUTHORIZED=0
 ENV DB_USER=postgres
 ENV DB_NAME=proyecto
 ENV DB_PORT=5432
-COPY src/index.js ./   
 EXPOSE 3000
 CMD ["node", "index.js"]

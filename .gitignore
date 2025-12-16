@@ -1,0 +1,4 @@
+database/data/
+*.pid
+*.wal
+*.init
